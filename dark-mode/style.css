@@ -96,6 +96,7 @@ body {
 .description {
   font-size: 9px;
   font-weight: 300;
+  line-height: 15px;
   color: var(--text-light);
 }
 /* Utility classes for margins */
@@ -239,16 +240,16 @@ body {
   margin-top: 31.42px;
   margin-bottom: 21.69px;
 }
-.current-balance{
+.current-balance {
   font-size: 10px;
   font-weight: 500;
   color: var(--color-white);
   margin: 36.42px 0 5px 0;
 }
-.btn-primary-rounded{
+.btn-primary-rounded {
   font-size: 10px;
   font-weight: 500;
-  color:var(--card-bg);
+  color: var(--card-bg);
   background-color: var(--color-white);
   padding: 12px 24px;
   margin-bottom: 23px;
@@ -327,30 +328,28 @@ body {
   margin-bottom: 5px;
   margin-top: 34.42px;
 }
-.btn-con-14{
+.btn-con-14 {
   margin-top: 38px;
   margin-bottom: 37px;
   display: flex;
   justify-content: center;
 }
-.btn-border-rounded{
+.btn-border-rounded {
   padding: 9px 18px;
   border: 1px solid var(--color-white);
   border-radius: 15px;
-  
 }
-.btn-con-15{
+.btn-con-15 {
   display: flex;
-  
 }
-.small-text-15{
+.small-text-15 {
   font-size: 9px;
   font-weight: 300;
   color: var(--text-light);
   line-height: 15px;
   margin-bottom: 19.5px;
 }
-.small-text-bold{
+.small-text-bold {
   font-size: 9px;
   color: var(--text-light);
   margin-top: 23px;
@@ -477,18 +476,18 @@ body {
 
 .whats-new-header {
   font-size: 11px;
-  color:  var(--color-white);
+  color: var(--color-white);
   margin-bottom: 16px;
   font-weight: 600;
 }
 .whats-new-list {
   font-size: 11px;
-  color:  var(--color-white);
+  color: var(--color-white);
   font-weight: 300;
   list-style-position: inside;
 }
 .card-description .bold {
-  color:  var(--color-white);
+  color: var(--color-white);
   font-weight: 600;
 }
 .mb-32 {
