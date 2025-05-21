@@ -1,0 +1,468 @@
+:root {
+  /* Base Colors */
+  --color-white: #ffffff;
+  --color-black: #0e0e0e;
+
+  /* Text Colors */
+  --text-light: #fdfdfd;
+  --text-dark: #0e0e0e;
+  --text-muted: #808080;
+  --text-note: #595959;
+  --text-link: #006996;
+  --text-error: #ff4e00;
+
+  /* Backgrounds */
+  --bg-primary: #0e0e0e;
+  --card-bg: #101010;
+  --bg-input: #252525;
+  --bg-icon-hover: rgba(255, 255, 255, 0.1);
+
+  /* Shadows */
+  --shadow-default: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-logo {
+  margin-top: 33.5px;
+  margin-left: 23px;
+  margin-bottom: 121.41px;
+}
+.card-logo img {
+  width: 119px;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: drop-shadow(var(--shadow-default));
+}
+
+.container {
+  width: 100%;
+  max-width: 768px;
+  padding: 0 44px;
+  margin: auto;
+}
+
+.title {
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 27px;
+  margin-bottom: 40px;
+}
+.title-compresed {
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-light);
+  padding-bottom: 36px;
+}
+
+.description {
+  font-size: 9px;
+  font-weight: 300;
+  color: var(--text-light);
+}
+/* Utility classes for margins */
+.mt-15 {
+  margin-top: 15px;
+}
+.mb-107 {
+  margin-bottom: 107px;
+}
+
+/* buttons section */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 28px;
+  margin-top: 27px;
+  margin-bottom: 61px;
+}
+.btn-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+  color: var(--color-white);
+  background: var(--color-black);
+  font-family: "Inter", sans-serif;
+}
+.withdrawal-failed-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+  color: var(--text-error);
+  background: var(--color-black);
+  font-family: "Inter", sans-serif;
+  padding: 7px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--text-error);
+  margin-bottom: 22.66px;
+  margin-top: 31.42px;
+}
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  width: 113px;
+  height: 30px;
+  background-color: var(--color-white);
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.confirmation-link {
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--text-light);
+  margin-bottom: 123.5px;
+}
+
+.confirmation-link a,
+.confirmation-link span {
+  color: var(--text-muted);
+}
+
+/* Verification code input form */
+.verification-code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  margin: 63.5px 0 60.5px 0;
+}
+
+.code-input {
+  width: 25px;
+  height: 28px;
+  background-color: var(--bg-input);
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-white);
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+
+.separator {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+/* Calculation card */
+
+.card-extra-content {
+  width: 304px;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  margin: 23px 0px 0px 0px;
+}
+.calculation-card {
+  width: 304px;
+  background-color: var(--card-bg);
+  filter: drop-shadow(var(--shadow-default));
+  border-radius: 10px;
+}
+.content-card-logo {
+  padding-left: 20px;
+  padding-top: 15px;
+}
+.content-card-logo img {
+  width: 66px;
+  height: 15.58px;
+  object-fit: contain;
+}
+.content-card-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-white-border {
+  padding: 8px 24px;
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
+  margin-top: 31.42px;
+  margin-bottom: 21.69px;
+}
+.content-card-btn-primery {
+  padding: 6px 14px;
+  font-family: "Inter", sans-serif;
+  color: #515151;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 1px solid #515151;
+  margin-top: 19.42px;
+}
+.content-card-btn-rounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 113px;
+  border: 1px solid #515151;
+  background: #f9f9f9;
+  height: 30px;
+  color: #515151;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+  margin-top: 23px;
+  font-family: "Inter", sans-serif;
+}
+.calculation-date-text {
+  color: var(--color-white);
+  font-size: 8px;
+  font-weight: 500;
+  padding-bottom: 7px;
+}
+.calculation-card-error {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 9px;
+  margin-top: 12px;
+  margin-bottom: 18.5px;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.withdrwal-failed-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 27px 0 23.5px 0;
+}
+.contact-support-link {
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 26.5px;
+}
+.content-card-current-balance-text {
+  font-size: 10px;
+  font-weight: 600;
+  color: #515151;
+  margin-bottom: 5px;
+  margin-top: 34.42px;
+}
+.content-card-amount-text {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 38px;
+  color: var(--color-white);
+}
+.content-card-amount-text .plus {
+  font-size: 20px;
+  color: var(--color-white);
+}
+.content-card-amount-text .doller {
+  font-size: 13px;
+  color: var(--color-white);
+}
+.dot-container {
+  display: flex;
+  margin-top: 12px;
+  justify-content: center;
+  column-gap: 3px;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #d9d9d9;
+}
+.dot-active {
+  background: #676767;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+}
+
+.social-icons a {
+  width: 26.6px;
+  height: 26.6px;
+  cursor: pointer;
+  background: var(--bg-icon-hover);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links {
+  font-size: 9px;
+  font-weight: 300;
+  margin-top: 27px;
+  margin-bottom: 29px;
+  color: var(--text-muted);
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.note-text {
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--text-note);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.note-text a {
+  color: var(--text-link);
+}
+
+.note-text-last {
+  margin-top: 12px;
+}
+/* New Codes */
+
+.card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+}
+
+/* new style  */
+.card-error-message {
+  font-size: 9px;
+  font-weight: 300;
+  color: #808080;
+  text-align: center;
+  max-width: 251px;
+  margin-top: 16px;
+}
+
+.whats-new-container {
+  padding: 38px 23px 0 23px;
+}
+
+.intro-text {
+  font-size: 11px;
+  color: #595959;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.whats-new-header {
+  font-size: 11px;
+  color: #595959;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.whats-new-list {
+  font-size: 11px;
+  color: #595959;
+  font-weight: 400;
+  list-style-position: inside;
+}
+.card-description .bold {
+  color: #686868;
+  font-weight: 600;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.card-logo-small {
+  padding-top: 39px;
+}
+.card-logo-small img {
+  width: 88px;
+  object-fit: contain;
+}
+.card-no-center {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 37px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+.card-no-center .msg-overview {
+  font-size: 11px;
+  font-weight: 500;
+  color: #595959;
+}
+.card-no-center .msg-overview a {
+  color: #595959;
+}
+.card-descriptions-box {
+  padding-top: 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.muted-discription-box {
+  color: #595959;
+  font-size: 11px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-top: 24px;
+}
+
+/* extra style  */
+.match-outcome-image {
+  margin-top: -38px;
+}
