@@ -1,0 +1,612 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Europa', Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+/* Hidden Snapshot Styles */
+.share-snapshot {
+    position: fixed;
+    left: -9999px;
+    top: 0;
+    width: 360px;
+    background-color: #181818;
+    color: black;
+    padding: 0;
+    border-radius: 0;
+    overflow: hidden;
+    margin: 0;
+    height: fit-content;
+    line-height: normal;
+}
+
+.snapshot-container {
+    padding: 22px;
+    /* background: #202020; */
+    border-radius: 16px;
+    border: 0 solid black;
+    position: relative;
+    min-height: 40px;
+    z-index: 2;
+}
+
+.snapshot-logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+}
+
+.snapshot-content {
+    background-color: #000;
+    border-radius: 8px;
+    padding: 8px 11px;
+    margin-top: 32px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 18px;
+    padding-top: 8px;
+}
+
+.snapshot-header {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    background: transparent;
+    padding: 6px 0;
+    margin-bottom: 16px;
+    margin-top: -8px;
+}
+
+.everyx-text {
+    padding-left: 1px;
+    padding-top: 3px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: -2px;
+}
+
+.divider {
+    color: white;
+    font-weight: 165;
+    font-size: 6.7px;
+    opacity: 1;
+    margin-top: 11.8px;
+    margin-left: 4px;
+    margin-right: 1.6px;
+}
+
+.share-result-text {
+    color: white;
+    font-size: 8px;
+    font-weight: 380;
+    letter-spacing: 0.4px;
+    margin-top: 12.2px;
+}
+
+.event-info {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    padding-top: 0;
+    margin-bottom: 8px;
+}
+
+.event-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-top: 8px;
+}
+
+.event-details {
+    margin-left: 4px;
+}
+
+.closed-time {
+    font-size: 6px;
+    color: #FF4E01;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.event-name {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    color: white;
+    font-family: Europa;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    width: 90%;
+}
+
+.trade-label {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    margin: 4px 0 12px;
+    margin-left: 1px;
+}
+
+.trade-label span {
+    color: #B0B0B0;
+    font-size: 6px;
+    line-height: 1;
+    position: relative;
+    letter-spacing: 0.1px;
+    margin-bottom: -1px;
+    margin-left: -0.4px;
+    font-weight: bold;
+}
+
+.trade-container {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    background-color: rgba(136, 131, 131, 0.18);
+    border-radius: 4px;
+    padding: 2px 0;
+    width: 59%;
+    margin: 6px 0 12px;
+    margin-bottom: 7px;
+    overflow: visible;
+    transform: translateY(-2px);
+}
+
+.trade-indicator {
+    width: 5px;
+    height: 24px;
+    opacity: 0.8;
+    background: linear-gradient(to bottom, #ff4e00, #FFCC00);
+    margin-right: 8px;
+    align-self: center;
+    border-radius: 4px;
+}
+
+.trade-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 0 8px 0 0;
+    font-size: 9px;
+    white-space: nowrap;
+    transform: translateY(-1px);
+}
+
+.outcome {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    margin-bottom: 8px;
+    font-family: Europa;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.probability {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.stats-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 10px;
+    padding-left: 0.5px;
+    width: 100%;
+}
+
+.stat-item .stat-label {
+    font-size: 8px;
+    color: grey;
+    margin: 0 0 2px 0;
+    font-weight: bold;
+}
+
+.stat-value {
+    display: flex;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    gap: 1px;
+}
+
+.dollar-sign {
+    font-size: 7.5px;
+    top: 8px;
+    position: relative;
+    font-weight: bold;
+}
+
+.amount {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 7px;
+    color: #FF4E01;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -1px;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: monospace;
+    margin-bottom: 25px;
+    margin-top: -17px;
+    opacity: 0.6;
+}
+
+.payout .dollar-sign,
+.payout .amount {
+    color: #94F201;
+}
+
+.intersect-logo-container {
+    position: absolute;
+    bottom: -2px;
+    right: -20px;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+}
+
+.intersect-logo {
+    width: 70%;
+    height: 90%;
+    margin-left: 15px;
+    margin-top: 11.5px;
+    object-fit: contain;
+    filter: brightness(1);
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-container {
+    background-color: #181818;
+    color: white;
+    position: relative;
+    border-radius: 8px;
+    padding-bottom: 20px;
+    padding-top: 28px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+    margin-left: 32px;
+    margin-right: 32px;
+    max-width: 370px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-weight: 800;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.modal-title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.share-card {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 14px;
+    background-color: #202020;
+    border-radius: 8px;
+}
+
+.card-logo {
+    width: 26px;
+    height: 26px;
+}
+
+.card-content {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    background-color: #101010;
+    border-radius: 8px;
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-top: 5px;
+}
+
+.card-title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 16px;
+    margin-right: 6px;
+}
+
+.card-divider {
+    width: 1px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-right: 6px;
+}
+
+.card-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 10px;
+    margin: 0;
+    line-height: 10px;
+}
+
+.card-event-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.card-event-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.card-closed-time {
+    font-size: 5px;
+    line-height: 10px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+.card-closed-time.profit {
+    color: #94F201;
+}
+
+.card-closed-time.loss {
+    color: #F23901;
+}
+
+.card-event-name {
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 10px;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+}
+
+.card-trade-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.card-trade-content {
+    width: 70%;
+    position: relative;
+    z-index: 10;
+}
+
+.card-trade-info {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 20px;
+}
+
+.card-trade-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.card-trade-label span {
+    color: white;
+    font-size: 8px;
+}
+
+.card-trade-container {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    min-height: 20px;
+    background-color: rgba(217, 217, 217, 0.1);
+    border-radius: 4px;
+    padding-right: 12px;
+}
+
+.card-trade-indicator {
+    width: 3px;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #ff4e00, #FFCC00);
+}
+
+.card-trade-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.card-outcome {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-probability {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 20px;
+    gap: 8px;
+}
+
+.card-stat-item {
+    flex: 1;
+}
+
+.card-stat-item:last-child {
+    text-align: left;
+    margin-left: 9px;
+}
+
+.card-stat-label {
+    color: #9ca3af;
+    font-size: 6px;
+    margin: 0;
+}
+
+.card-stat-value {
+    font-size: 12px;
+    margin: 0;
+    line-height: 16px;
+    color: white;
+}
+
+.card-stat-value.profit {
+    color: #94F201;
+}
+
+.card-stat-value.loss {
+    color: #F23901;
+}
+
+.card-dollar-sign {
+    font-size: 6px;
+    padding: 0 1px;
+}
+
+.card-arrow-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+}
+
+.card-arrow {
+    width: 48px;
+    height: 12px;
+    margin-top: 4px;
+}
+
+.card-intersect-container {
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    width: 95px;
+    height: 105px;
+    z-index: 1;
+}
+
+.card-intersect-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+}
+
+.save-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.save-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.share-button {
+    background: linear-gradient(212deg, #1595FF 34.67%, #2D35ED 49.6%, #BE59EC 133.17%);
+    color: white;
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.save-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.share-button:hover {
+    opacity: 0.9;
+}

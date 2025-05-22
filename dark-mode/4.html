@@ -1,78 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Registration Confirmation</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div>
-            <header class="header">
-                <div class="card-logo">
-                    <img src="./assets/everyX-logo.png" alt="EveryX Logo" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <header class="header">
+        <div class="card-logo">
+          <img src="./assets/everyX-logo.png" alt="EveryX Logo" />
+        </div>
+        <div class="card-image">
+          <img src="./assets/header-image-1.png" alt="EveryX Illustration" />
+        </div>
+      </header>
+      <div class="container">
+        <h4 class="title">You won your match !</h4>
+        <p class="subtitle">
+          Congratulations.<br />
+          Your rewards have been credited.
+        </p>
+        <div class="card-content">
+          <div class="card-header">
+            <h3 class="card-title">EveryX</h3>
+            <span class="card-divider"></span>
+            <p class="card-subtitle">Result</p>
+          </div>
+
+          <div class="card-event-info">
+            <img
+              src="./assets/avater.png"
+              alt="Event"
+              class="card-event-image"
+              crossorigin="anonymous"
+            />
+            <div class="card-event-details">
+              <p class="card-closed-time profit">Closed : Nov 2 2024 14:05</p>
+              <h2 class="card-event-name">Who will make it to the Asutralian Open Men's Singles semifinals ?</h2>
+            </div>
+          </div>
+
+          <div class="card-trade-section">
+            <div class="card-trade-content">
+              <div class="card-trade-info">
+                <div class="card-trade-label">
+                  <span>My Trade is</span>
                 </div>
-                <div class="card-image">
-                    <img
-                        src="./assets/header-image-1.png"
-                        alt="EveryX Illustration"
-                    />
+                <div class="card-trade-container">
+                  <div class="card-trade-indicator"></div>
+                  <div class="card-trade-details">
+                    <p class="card-outcome">Yes</p>
+                    <p class="card-probability">75%</p>
+                  </div>
                 </div>
-            </header>
-            <div class="container">
-                <h4 class="title">You won your match !</h4>
-                <p class="subtitle">
-                    Congratulations.<br />
-                    Your rewards have been credited.
-                </p>
-                <div class="btn-container">
-                    <button class="btn-secondary">Check Portfolio</button>
-                    <button class="btn-primary">Share your Result</button>
+              </div>
+
+              <div class="card-stats">
+                <div class="card-stat-item">
+                  <p class="card-stat-label">Cost</p>
+                  <p class="card-stat-value">
+                    <span class="card-dollar-sign">$</span>25.00
+                  </p>
                 </div>
+                <div class="card-arrow-container">
+                    <span class="card-arrow-title">Won</span>
+                    <img src="./assets/arrow.svg" class="card-arrow" alt="arrow">
+                </div>
+                <div class="card-stat-item">
+                  <p class="card-stat-label">Paid Out</p>
+                  <p class="card-stat-value profit">
+                    <span class="card-dollar-sign">$</span>33.33
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <footer class="footer">
-                <div class="social-icons">
-                    <a href="#" aria-label="Join us on Discord">
-                        <img src="./assets/discord.svg" alt="Discord Icon" />
-                    </a>
-                    <a href="#" aria-label="Follow us on Twitter">
-                        <img src="./assets/twiter.svg" alt="Twitter Icon" />
-                    </a>
-                    <a href="#" aria-label="Follow us on Instagram">
-                        <img
-                            src="./assets/instagram.svg"
-                            alt="Instagram Icon"
-                        />
-                    </a>
-                    <a href="#" aria-label="Join our Telegram channel">
-                        <img src="./assets/telegram.svg" alt="Telegram Icon" />
-                    </a>
-                </div>
-
-                <nav class="footer-links" aria-label="Footer Navigation">
-                    <a href="#">Privacy Policy</a>|<a href="#">Help</a>|<a
-                        href="#"
-                        >About Us</a
-                    >
-                </nav>
-
-                <p class="note-text">
-                    This email was sent to you by EveryX.<br />
-                    You are receiving this email because you subscribed to
-                    updates from EveryX.
-                </p>
-                <p class="note-text note-text-last">
-                    If you wish to unsubscribe from all future emails, please
-                    <a href="#">click here</a>.
-                </p>
-            </footer>
+            <div class="card-intersect-container">
+              <img
+                src="./assets/white-image.png"
+                alt="Intersect Logo"
+                class="card-intersect-logo"
+                crossorigin="anonymous"
+              />
+            </div>
+          </div>
         </div>
-    </body>
+        <div class="btn-container">
+          <button class="btn-secondary">Check Portfolio</button>
+          <button class="btn-primary">Share your Result</button>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="social-icons">
+          <a href="#" aria-label="Join us on Discord">
+            <img src="./assets/discord.svg" alt="Discord Icon" />
+          </a>
+          <a href="#" aria-label="Follow us on Twitter">
+            <img src="./assets/twiter.svg" alt="Twitter Icon" />
+          </a>
+          <a href="#" aria-label="Follow us on Instagram">
+            <img src="./assets/instagram.svg" alt="Instagram Icon" />
+          </a>
+          <a href="#" aria-label="Join our Telegram channel">
+            <img src="./assets/telegram.svg" alt="Telegram Icon" />
+          </a>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer Navigation">
+          <a href="#">Privacy Policy</a>|<a href="#">Help</a>|<a href="#"
+            >About Us</a
+          >
+        </nav>
+
+        <p class="note-text">
+          This email was sent to you by EveryX.<br />
+          You are receiving this email because you subscribed to updates from
+          EveryX.
+        </p>
+        <p class="note-text note-text-last">
+          If you wish to unsubscribe from all future emails, please
+          <a href="#">click here</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
